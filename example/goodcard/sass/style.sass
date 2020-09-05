@@ -1,0 +1,513 @@
+$text-color-dark: #373737
+$text-color-light: #ffffff
+$active-color: #fd9c28
+img
+    max-width: 100%
+body
+    font-family: 'Roboto', sans-serif
+    margin: 0
+
+.header
+    padding: 15px
+    &__logo
+        background: url('../img/header-logo.png') center no-repeat
+        background-size: 100%
+        width: 191px
+        height: 61px
+    &-contacts
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        &__phone
+            &s
+                display: fle
+            font-size: 22px
+            padding-right: 14px
+    &__button
+        font-size: 14px
+        background-color: $active-color
+        border: none
+        border-radius: 5px
+        color: $text-color-light
+        padding: 11px 20px
+        outline: none !important
+        img
+            vertical-align: middle
+    &__button:hover
+        background-color: lighten($active-color, 5)
+        cursor: pointer
+.main
+    padding-top: 65px
+    padding-bottom: 60px
+    background: url('../img/main/main-bg.jpg') center no-repeat
+    &-text
+        color: $text-color-light
+        &__title
+            margin-bottom: 20px
+            font-size: 41px
+            font-weight: 700
+        &__subtitle
+            margin-bottom: 20px
+            font-size: 28px
+            font-weight: 300
+        &__form 
+            background-color: rgba(255, 255, 255, 0.2)
+.form
+    &-title
+        margin-bottom: 20px
+        padding-right: 87px
+        font-size: 20px
+        font-weight: 300
+        line-height: 30px
+        &__important
+            font-weight: 700
+            text-transform: uppercase
+    &__input
+        padding: 11px 20px
+        border: none
+        border-radius: 4px
+        margin-right: 10px
+        outline: none !important
+    &__button
+        font-size: 14px
+        background-color: $active-color
+        border: none
+        border-radius: 5px
+        color: $text-color-light
+        padding: 11px 20px
+        margin-bottom: 10px
+        outline: none !important
+    &__button:hover
+        background-color: lighten($active-color, 5)
+        cursor: pointer
+.overlay
+    position: fixed
+    display: none 
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.4)
+    z-index: 3
+    .popup
+        position: fixed
+        left: 50%
+        top: 100px
+        width: 766px
+        transform: translateX(-50%)
+        // background: #ffffff
+        &-close
+            position: absolute
+            top: -30px
+            right: -20px
+            font-size: 35px
+            color: #ffffff
+            font-weight: 300
+            cursor: pointer
+        &-title
+            display: block
+            width: 100%
+            min-height: 71px
+            text-align: center
+            background-color: $active-color 
+            color: #ffffff
+            font-size: 21px
+            font-weight: 500
+            line-height: 71px
+            text-transform: uppercase
+        &-form
+            background: url('../img/popup/bg_popup.jpg') center no-repeat
+            background-size: cover
+            padding: 35px 88px 50px 88px
+            color: #ffffff
+            &_header
+                //padding: 0
+                text-align: center
+                font-size: 30px
+                font-weight: 400
+                line-height: 27px
+                span
+                    font-size: 24px
+            &__lable
+                font-size: 20px
+                font-weight: 300
+                line-height: 30px
+            &__input
+                width: 365px
+                height: 45px
+                border-radius: 5px
+                outline: none !important
+                margin-right: 8px
+            &__btn
+                background-color: $active-color
+                padding: 11px 29px
+                border: none
+                border-radius: 3px
+                color: $text-color-light
+                outline: none !important
+                font-weight: 500
+                line-height: 22px
+            &__note
+                font-size: 14px
+                font-weight: 300
+                line-height: 30px
+        
+.features
+    background-color: #f4f4f4
+    padding-top: 49px
+    padding-bottom: 55px
+    &-blocks
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &-block
+        display: flex
+        align-items: center
+        flex-basis: 31%
+        background-color: #fff
+        padding: 28px 19px
+        margin-bottom: 30px
+        &__img
+            flex-basis: 40%
+            margin-right: 9px
+            &__title
+                font-size: 15px
+                font-weight: 700
+                margin-bottom: 5px
+            &__descr
+                font-size: 14px 
+                font-weight: 400
+.numbers
+    margin-bottom: 37px
+    text-align: center
+    &-block
+        display: inline-block
+        width: 30%
+        vertical-align: top
+        &__title
+            margin-bottom: 10px
+            font-size: 36px
+            font-weight: 900
+            color: $active-color
+            sup
+                font-size: 18px
+        &__text 
+            font-size: 16px
+            font-weight: 300
+.products
+    text-align: center
+    padding-top: 57px
+.section-title
+    text-align: center
+    font-size: 27px
+    font-weight: 700
+    line-height: 18px
+    text-transform: uppercase
+    &::after
+        content: ''
+        margin-top: 12px
+        display: block
+        height: 6px
+        background: url(../img/products/wavy-line-clipart-picture-gif-png-icon-image-hd-484800.png) center no-repeat
+.products-block
+    margin-bottom: 30px
+    &__title
+        padding-top: 19px
+        font-size: 20px
+        font-weight: 500
+        line-height: 19.99px
+        color: black
+    &__buttons
+        margin-top: 28px
+        .button
+            font-size: 15px
+            background-color: $active-color
+            border: 1px solid
+            border-radius: 5px
+            color: $text-color-light
+            padding: 14px 22px
+            margin-bottom: 10px
+            outline: none !important
+            &:hover
+                background-color: lighten($active-color, 5)
+                cursor: pointer
+        .button-o
+            background-color: transparent
+            color: $text-color-dark
+            font-size: 15px
+            font-weight: 400
+            line-height: 23.47px
+            padding: 10px 24px
+            border-radius: 4px
+            border: 1px solid rgba(#373737,0.5)
+            opacity: 0.5
+            &:hover
+                background-color: lighten($active-color, 5)
+                color: $text-color-light
+                border: 1px solid transparent
+                cursor: pointer
+.customers
+    margin-bottom: 60px
+    &-block
+        text-align: center
+.sentence
+    padding-top: 64px
+    padding-bottom: 69px
+    background: url('../img/sentence_bg.jpg') center no-repeat
+    text-align: center
+    color: $text-color-light
+    &-title
+        font-size: 32px
+        line-height: 35px
+        padding-bottom: 20px
+        span
+            font-size: 26px
+    .form
+        &-label
+            font-size: 20px
+            font-weight: 300
+            line-height: 30px
+            margin-bottom: 17px
+            display: block
+        &-input
+            padding: 5px 100px
+            font-size: 14px
+            font-weight: 300
+            line-height: 42px
+            border-radius: 5px
+            outline: none !important
+            margin-bottom: 12px
+        &-button
+            font-size: 15px
+            font-weight: 500
+            line-height: 22px
+            background-color: $active-color
+            border: none
+            border-radius: 5px
+            color: $text-color-light
+            padding: 21px 30px
+            margin-bottom: 10px
+            outline: none !important
+            &:hover
+                background-color: lighten($active-color, 5)
+                cursor: pointer
+    &-small
+        font-size: 14px
+        font-weight: 300
+        line-height: 30px
+.production
+    padding-top: 87px
+    padding-bottom: 90px
+    &-slider
+        &__top
+            margin-bottom: 13px
+            height: 377px
+            overflow-y: hidden
+        &__bot 
+            padding-left: 30px
+            padding-right: 30px
+            height: 78px
+            overflow-y: hidden
+            img 
+                margin: 0 6px 
+    &-text
+        &__title
+            font-size: 28px
+            font-weight: 400
+            line-height: 22px
+            padding: 26px 
+            background: $active-color
+            color: $text-color-light
+        &__descr
+            padding-top: 28px
+            color: #373737
+            font-size: 16px
+            font-weight: 300
+            line-height: 24px
+
+.slider-arrow
+    position: absolute
+    top: 0
+    z-index: 99
+    height: 100%
+    width: 22px
+    &_prod
+        border: 1px solid $active-color
+    &:hover
+        cursor: pointer
+    &_right
+        right: 0
+        background: #fff url('../img/arrow-right.png') center no-repeat
+        &:hover
+            background: $active-color url('../img/arrow-right__active.png') center no-repeat
+    &_left
+        left: 0
+        background: #fff url('../img/arrow-left.png') center no-repeat
+        &:hover
+            background: $active-color url('../img/arrow-left__active.png') center no-repeat
+.feedback
+    padding-top: 55px
+    padding-bottom: 66px
+    background-color: #f4f4f4
+    &-slider
+        img
+            margin: 0 auto
+.contacts
+    position: relative
+    // padding-top: 73px
+    // padding-bottom: 87px
+    .button
+        font-size: 14px
+        font-weight: 500
+        line-height: 22px
+        background-color: $active-color
+        border: none
+        border-radius: 5px
+        color: $text-color-light
+        padding: 14px 24px
+        outline: none !important
+        &:hover
+            background-color: lighten($active-color, 5)
+            cursor: pointer
+    &-block
+        position: absolute
+        top: 10%
+        left: 10%
+        background-color: #fff
+        padding-top: 33px
+        padding-bottom: 39px
+        padding-left: 60px
+        padding-right: 34px
+        &__title
+            display: block
+            font-size: 18px
+            font-weight: 700
+            margin-top: 8px
+            margin-bottom: 8px
+        &__text
+            margin-bottom: 30px
+.footer
+    background-color: #000000
+    text-align: center
+    &-lable
+    color: #ffffff
+    font-size: 13px
+    padding-top: 40px
+    padding-bottom: 40px
+    
+
+@media(max-width: 576px)
+    .hidden-mobile
+        display: none
+    .header
+        &__logo
+            background: $active-color url('../img/mobile/mobile_logo.png') center no-repeat
+            width: 35px
+            height: 35px
+            border-radius: 4px
+        &-contacts
+            &__phone
+                &s
+                    flex-direction: column
+                font-size: 14px
+                margin-right: 0
+        &__button
+            display: inline-block
+            padding: 9px
+    .main
+        text-align: center
+        &-text
+            &__title
+                font-size: 22px
+                color: $active-color
+            &__subtitle
+                font-size: 18px
+                margin-bottom: 40px
+            &__form
+                background-color: transparent
+                padding: 10px
+        .form
+            &-title
+                font-size: 15px
+                padding-right: 0px
+                line-height: 1.4
+            &__input
+                width: 100%
+                text-align: center
+                padding: 17px
+                margin-bottom: 13px
+            &__button
+                width: 180px
+                padding: 17px 29px
+    .features
+        padding-top: 24px
+    .numbers
+        &-block
+            display: block
+            width: 100%
+            padding-bottom: 24px
+    .features-blocks
+        flex-direction: column
+    .products
+        &-block
+            &__buttons
+                display: flex
+                .button
+                    width: 162px
+                    height: 46px
+                    padding: 0
+                    &-o
+                        margin-right: 10px
+                        width: 119px
+                        height: 45px
+    .sentence
+        text-align: center
+        &-title
+            font-size: 20px
+            font-weight: 900
+            span
+                font-size: 15px
+                font-weight: 400
+        .form
+            &-label
+                font-size: 14px    
+            &-input
+                width: 290px
+                height: 47px
+                font-size: 9px  
+            &-button
+                width: 180px
+                height: 41px
+                padding: 0
+        &-small
+            font-size: 13px  
+    .production
+        padding-top: 0
+        padding-bottom: 80px
+        &-text
+            text-align: center
+            &__title
+                font-size: 20px
+                padding: 16px 80px
+            &__descr
+                font-size: 14px
+    .customers
+        .section
+            &-title 
+                font-size: 22px
+    .feedback
+        text-align: center
+        .section
+            &-title
+                font-size: 23px
+    .contacts
+        .ymap
+            width: 100%
+        &-block
+            position: relative
+            text-align: center
+            left: 0
+@media(max-width: 768px)
+    .numbers
+        &-block
+            &__title
+                font-size: 27px
